@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>onBoarding</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<!--<div class="card-number">
+			<div>
+				<div class="card-number-box active">
+					<h5>1</h5>
+				</div>
+				<p>Account Setup</p>
+			</div>
+			<div>
+				<div class="card-number-box">
+					<h5>2</h5>
+				</div>
+				<p>Address</p>
+			</div>
+			<div>
+				<div class="card-number-box">
+					<h5>3</h5>
+				</div>
+				<p>Personal Details</p>
+			</div>
+		</div>!-->
+		<form data-multi-step class="multi-step-form">
+			<div class="card" data-step="1">
+				<h2 class="card-title">Create Your Account</h2>
+				<h3 class="step-title">Step 1</h3>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" placeholder="Email" />
+				</div>
+				<div class="form-group">
+					<label for="Password">Password</label>
+					<input
+						type="Password"
+						name="Password"
+						id="Password"
+						placeholder="Password"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="confirmPassword">Confirm Password</label>
+					<input
+						type="confirmPassword"
+						name="confirmPassword"
+						id="confirmPassword"
+						placeholder="Confirm Password"
+					/>
+				</div>
+				<div class="button">
+					<button type="button" data-next>Next</button>
+				</div>
+			</div>
+			<div class="card" data-step="2">
+				<h2 class="card-title">Create Your Account</h2>
+				<h3 class="step-title">Step 2</h3>
+				<div class="form-group">
+					<label for="Address">Address</label>
+					<input
+						type="text"
+						name="Address"
+						id="Address"
+						placeholder="Address"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="City">City</label>
+					<input type="text" name="City" id="City" placeholder="City" />
+				</div>
+				<div class="form-group">
+					<label for="Zipcode">Zip Code</label>
+					<input
+						type="text"
+						name="Zipcode"
+						id="Zipcode"
+						placeholder="Zip Code"
+					/>
+				</div>
+				<div class="button">
+					<button type="button" data-previous>Previous</button>
+					<button type="button" data-next>Next</button>
+				</div>
+			</div>
+			<div class="card" data-step="3">
+				<h2 class="card-title">Create Your Account</h2>
+				<h3 class="step-title">Step 3</h3>
+				<div class="form-group">
+					<label for="first-name">First Name</label>
+					<input
+						type="text"
+						name="first-name"
+						id="first-name"
+						placeholder="First Name"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="last-name">Last Name</label>
+					<input
+						type="text"
+						name="last-name"
+						id="last-name"
+						placeholder="Last Name"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="Phone">Phone</label>
+					<input type="text" name="Phone" id="Phone" placeholder="Phone" />
+				</div>
+				<div class="button">
+					<button type="button" data-previous>Previous</button>
+					<button type="submit">Submit</button>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
