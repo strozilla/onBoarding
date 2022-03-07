@@ -8,11 +8,12 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 4em;
+  margin: 5em auto 1em auto;
+  max-width: 600px;
 }
 
 .card-number div {
-  margin: auto 2em;
+  margin: auto auto;
   text-align: center;
   line-height: 1em;
 }
@@ -31,6 +32,7 @@ body {
   margin-top: .5em;
   color: #fff;
   font-size: small;
+  width: max-content;
 }
 
 .card-number-box {
@@ -39,18 +41,19 @@ body {
   border: 1px solid #fff;
   background-color: #fff;
   border-radius: 2px;
-  margin-bottom: 0%;
+  margin: auto;
 }
 
-hr {
-  transform: rotate(90deg);
-  height: 320px;
-  margin-bottom: 35px;
+.hr {
+  border-top: 2px solid #eee;
+  width: 45%;
+  margin: auto -3em 2.5em -2em !important;
+  right: -3px;
   z-index: -1;
 }
 
-.multi-step-form {
-  margin-top: -10em;
+.hr.active {
+  border-top: 2px solid #282;
 }
 
 .card {
@@ -58,7 +61,7 @@ hr {
   border: 1px solid #333;
   border-radius: .5rem;
   box-shadow: -1px 1px 5px 9px rgba(100, 40, 40, 0.3);
-  height: 40vh;
+  height: auto;
   padding: .5rem;
   max-width: 300px;
   margin: 5px auto;
